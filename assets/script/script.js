@@ -24,32 +24,41 @@ function validaNome(){
 function validaEmail(){
     let txtEmail = document.querySelector('#txtEmail')
 
-    if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
-       txtEmail.innerHTML = 'E-mail Inválido!'
-       txtEmail.style.color = 'red'
-    } else {
-        txtEmail.innerHTML = 'E-mail Válido!'
-        txtEmail.style.color = 'green'
-        emailOk = true
-    }
-}
-function validaAssunto() {
-    let txtAssunto = document.querySelector('#txtAssunto')
- 
-    if (assunto.value.length >= 140) {
-        txtAssunto.innerHTML = 'digite até 140 caracteres'
-        txtAssunto.style.color = 'red'
-        txtAssunto.style.display = 'block'
-    } else {
-        txtAssunto.style.display = 'none'
-       assuntoOk = true
-    }
- }
+    let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
- function enviar() {
-    if (nomeOk == true && emailOk == true && assuntoOk == true) {
-       alert ('Formulário enviado com sucesso!')
+  if (email.value.match(regex)) {
+    email.style.borderBottom = '2px solid var(--primary-color)';
+    txtEmail.innerHTML = 'Email válido 👌';
+    txtEmail.style.color = 'var(--primary-color)';
+    emailOk = true;
+  } else {
+    email.style.borderBottom = '2px solid red';
+    txtEmail.innerHTML = 'Email inválido';
+    txtEmail.style.color = 'red';
+    emailOk = false
+    
+  }
+}
+function assuntoDigitado() {
+    let txtAssunto = document.querySelector('#txtAssunto');
+  
+    if (assunto.value.length <= 140) {
+      assunto.style.borderBottom = '2px solid var(--primary-color)';
+      txtAssunto.innerHTML = 'Assunto válido, pode dale';
+      txtAssunto.style.color = 'green';
+      assuntoOk = true;
     } else {
-       alert ('Preencha o formulário corretamente antes de enviar...')
+      assunto.style.borderBottom = '2px solid red';
+      txtAssunto.innerHTML = 'Assunto inválido, o texto deve de 1 a 140 caracteres';
+      txtAssunto.style.color = 'red';
+      assuntoOk = false;
     }
- }
+  }
+
+  function enviar() {
+    if (nomeOk == true && emailOk == true && assuntoOk == true) {
+      alert('Formulário enviado com sucesso!');
+    } else {
+      alert('Preencha o formulário corretamente antes de enviar...');
+    }
+  }

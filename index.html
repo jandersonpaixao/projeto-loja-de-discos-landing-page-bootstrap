@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+              <a id="home" class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://open.spotify.com/playlist/2k5gxHByNJrkri1qN6psxk" " target="_blank">Playlist</a>
@@ -41,12 +41,11 @@
                 Produtos
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">LP's</a>
-                <a class="dropdown-item" href="#">Compactos</a>
-                <a class="dropdown-item" href="#">Fitas</a>
-                <a class="dropdown-item" href="#">Cd's</a>
+                <a class="dropdown-item" href="#lp">LP's</a>
+                <a class="dropdown-item" href="#compactos">Compactos</a>
+                <a class="dropdown-item" href="#cd">Cd's</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Todos os produtos</a>
+                <a class="dropdown-item" href="#todos">Todos os produtos</a>
               </div>
             </li>
           </ul>
@@ -92,6 +91,7 @@
     <div class="container">
       <h1 class="display-4">Discos de alta qualidade</h1>
       <p class="lead">Seu lugar favorito para encontrar os melhores discos.</p>
+      <div id="todos"></div>
     </div>
   </div>
   <!-- /jumbotron -->
@@ -99,6 +99,13 @@
   <!-- cards -->
 
 <div class="container">
+
+  <div class="cd">
+    <div  class="alert alert-info text-center" role="alert">
+     CD's
+     <div id="cd"></div>
+    </div>
+
   <div class="card-columns">
     <div class="card">
       <img class="card-img-top" src="https://www.ladocdiscos.com.br/produtos/1640/r-1125302-1194063168jpegjpg" alt="Imagem de capa do card">
@@ -107,7 +114,7 @@
         <p class="card-text">Fabricado: BRASIL
           Ano: 2018
           Estado: Bom estado
-          Formato Vinyl - 12</p>
+          Formato Vinyl - 12'</p>
       </div>
     </div>
     <div class="card">
@@ -117,7 +124,7 @@
         <p class="card-text">Fabricado: BRASIL
 Ano: 1981
 Estado: Bom estado
-Formato Vinyl - 12.</p>
+Formato Vinyl - 12'.</p>
       </div>
     </div>
     <div class="card">
@@ -127,7 +134,7 @@ Formato Vinyl - 12.</p>
         <p class="card-text">Fabricado: BRASIL
           Ano: 1975
           Estado: Bom Estado
-          Formato Vinyl - 12.</p>
+          Formato Vinyl - 12'.</p>
         <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
       </div>
     </div>
@@ -149,7 +156,7 @@ Formato Vinyl - 12.</p>
           Fabricado: USA
           Ano: 2008
           Estado: Bom Estado
-          Formato Vinyl - 12.</p>
+          Formato Vinyl - 12'.</p>
       </div>
     </div>
     <div class="card">
@@ -160,10 +167,133 @@ Formato Vinyl - 12.</p>
           Fabricado: BRASIL
           Ano: 1978
           Estado: Bom Estado
-          Formato Vinyl - 12</p>
+          Formato Vinyl - 12'</p>
       </div>
     </div>
   </div>
+
+</div>
+
+<div class="longplay">
+  <div  class="alert alert-info text-center" role="alert">
+   LP's
+    <div id="lp"></div>
+   </div>
+
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="https://www.alojadediscos.com.br/resizer/view/300/300/false/true/vinil-lula-cortes-e-ze-ramalho-paebiru-duplo-5267.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title"> Lula Côrtes e zé Ramalho - Paêbirú - Duplo</h5>
+        <p class="card-text">  Fabricado: BRASIL
+          Ano: 1974
+          Estado: Bom Estado
+          Formato Vinyl - 12'</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://www.alojadediscos.com.br/resizer/view/300/300/false/true/vinil-gilberto-gil-refavela-edicao-comemorativa-40-anos-9384.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Gilberto Gil - Refavela</h5>
+        <p class="card-text">  Fabricado: BRASIL
+          Ano: 1977
+          Estado: Bom Estado
+          Formato Vinyl - 12'</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://www.alojadediscos.com.br/resizer/view/300/300/false/true/vinil-chico-science-nacao-zumbi-afrociberdelia-5189.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title"> Chico Science & Nação Zumbi</h5>
+        <p class="card-text">Fabricado: BRASIL
+          Ano: 1996
+          Estado: Bom Estado
+          Formato Vinyl - 12'</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="https://www.alojadediscos.com.br/resizer/view/300/300/false/true/vinil-tom-ze-todos-os-olhos-5460.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Tom zé - Todos os Olhos</h5>
+        <p class="card-text">Fabricado: BRASIL
+          Ano: 1973
+          Estado: Bom Estado
+          Formato Vinyl - 12'</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://www.alojadediscos.com.br/resizer/view/300/300/false/true/vinil-elza-soares-deus-e-mulher-5462.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Elza Soares - Deus é Mulher</h5>
+        <p class="card-text">Fabricado: BRASIL
+          Ano: 2018
+          Estado: Bom Estado
+          Formato Vinyl - 12'</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://www.alojadediscos.com.br/resizer/view/300/300/false/true/3370.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Zé Ramalho - Atlantida</h5>
+        <p class="card-text">Fabricado: BRASIL
+          Ano: 1974
+          Estado: Bom Estado
+          Formato Vinyl - 12'</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="compactos">
+  <div  class="alert alert-info text-center" role="alert">
+    Compactos
+    <div id="compactos"></div>
+   </div>
+
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="https://armazemdovinil.com/wp-content/uploads/2017/12/ceu-768x768.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Compacto Café Preto e Céu – Água, Fogo, Terramar</h5>
+        <p class="card-text">Fabricado: BRASIL
+          Ano: 2018
+          Estado: Bom Estado
+          Formato Vinyl - 7'</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://armazemdovinil.com/wp-content/uploads/2016/01/M77854W595.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Compacto Bob Marley – Africa Unite</h5>
+        <p class="card-text">Importado
+          Ano: 1979
+          Estado: Bom Estado
+          Formato Vinyl - 7</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://armazemdovinil.com/wp-content/uploads/2015/10/1098_1-768x768.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Compacto Vivendo do Ócio Dilema</h5>
+        <p class="card-text">Fabricado: BRASIL
+          Ano: 2009
+          Estado: Bom Estado
+          Formato Vinyl - 7'.</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
   <!-- cards -->
 
@@ -180,18 +310,24 @@ Formato Vinyl - 12.</p>
          Texto retirado do site: <cite title="Título da fonte">baratosafins.com.br</cite>
         </small></p>
     </div>
+    
 
     <div class="col-md-6">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Zxwg8TfEB-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
+  <div  class="alert alert-warning" role="alert">
+    Playlist do dia
+    <div id="compactos"></div>
+   </div>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3TDo6C6P28I32Rxvs2g98a?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
   <!-- Textos e video -->
 
       <!--Formulário de contato-->
-
+<hr>
       <div class="row mb-5">
         <div class="col-md-12">
-          <h4 class="text-center">
+          <h4 class="text-center mt-5">
             Entre em contato com a gente
           </h4>
         </div>
@@ -215,12 +351,12 @@ Formato Vinyl - 12.</p>
            
             <div class="form-group">
               <label for="assunto">Assunto</label>
-              <textarea class="form-control" id="assunto" rows="3"></textarea>
+              <textarea class="form-control" id="assunto"rows="6" onkeyup='assuntoDigitado()' required></textarea>
               <div  id="txtAssunto"></div>
             </div>
   
             <div class="form-group d-flex justify-content-end">
-              <button class="btn btn-outline-success">Enviar</button>
+              <button class="btn btn-outline-success" onclick="enviar()">Enviar</button>
             </div>
           </form>
         </div>
